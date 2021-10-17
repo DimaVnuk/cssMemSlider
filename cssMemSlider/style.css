@@ -56,39 +56,68 @@ label::after {
     border-radius: 50%;
 }
 
-.main input{
+.main input {
     display: none;
 }
 
-.slider{
+.slider {
     width: 1200px;
     height: 700px;
     overflow: hidden;
     position: relative;
 }
 
-.img-cont{
+.img-cont {
     height: inherit;
     position: absolute;
     width: inherit;
 }
 
-.img1{
-  background: url("./assets/image/1.jpg");  
-  background-size: cover;
-}
-
-.img2{
-    background: url("./assets/image/2.jpg");  
+.img1 {
+    background: url("./assets/image/1.jpg");
     background-size: cover;
 }
 
-.img3{
-    background: url("./assets/image/3.png"); 
-    background-size: cover; 
+.img2 {
+    background: url("./assets/image/2.jpg");
+    background-size: cover;
 }
 
-.img4{
+.img3 {
+    background: url("./assets/image/5.jpg");
+    background-size: cover;
+}
+
+.img4 {
     background: url("./assets/image/4.jpg");
-    background-size: cover;   
+    background-size: cover;
+}
+
+@media only screen and (max-width:320px) {
+    .img-cont {
+        height: 500px;
+        position: absolute;
+        width: 300px;
+    }
+    .slider {
+        width: 300px;
+        height: 200px;
+    }
+    .img1 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .img2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .img3 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+    }
+    .img4 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
